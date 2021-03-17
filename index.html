@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENFILADISSA MACRAMÉ</title>
+</head>
+
+<body>
+    <div class="body1" style="display: block;">
+        <header class="firstPageHeader">
+            <div class="contenedorLogo"><img class="logo" src="./img/logo.png" alt="logo"></div>
+        </header>
+
+        <main>
+            <div class="categorias"></div>
+            <div class="productos"></div>
+        </main>
+
+        <footer>
+            <button class="icoHome" onclick="reinicio()"><img class="homeSeleccionado" onclick="reinicio()"src="./img/home.svg"></button>
+            <button class="icoIG"><a href="https://www.instagram.com/enfiladissa.macrame/?hl=es" target="_blank"><img src="./img/IG.svg"></a></button>
+            <button class="icoSend" onclick="enviarCarrito()"><img src="./img/cart.svg"></button>
+            <button class="icoOptional"><img src=""></button>
+            <button class="icoChat" onclick="continuarMail()"><img src="./img/chat.svg"></button>
+        </footer>
+
+        <div class="cajaMail" style="display: none;">
+            <form id="formID" method="get">
+                <p class="txtForm"><input type="text" name="nombre" placeholder="Nombres y apellidos" id="nombreMail"></p>
+                <p class="txtForm"><input type="text" name="mail" placeholder="Mail" id="mail"></p>
+                <p class="txtForm"><textarea class="commentForm" type="text" name="comentarios" placeholder="Mensaje" id="mensaje"></textarea></p>
+                <p>
+                    <input class="btnForm" type="submit" value="Enviar" onclick="enviarMail()">&nbsp; &nbsp; &nbsp;
+                    <input class="btnForm" type="reset" value="Cancelar" onclick="cancelarMail()">
+                </p>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="body2" style="display: none;">
+        <header class="secondPageHeader">
+            <button class="back" onclick="retorno()"><img class="returnArrow" src="./img/return.svg"></button>
+            <button class="cart"><img src="./img/cart.svg"></button>
+            <button class="del" onclick="vaciarArray()">
+                <img class="garbage" src="./img/garbage.svg">
+            </button>
+        </header>
+
+        <main>
+            <h3>Mi carrito</h3>
+            <div class="productos2"></div>
+        </main>
+
+        <div class="cajaFormulario" style="display: none;">
+            <form id="formID" method="get">
+                <p class="txtForm"><input type="text" name="nombre" placeholder="Nombres y apellidos" id="nombre"></p>
+                <p class="txtForm"><input type="text" name="mail" placeholder="Mail"></p>
+                <p class="txtForm"><input type="text" name="direccion" placeholder="Dirección de envío" id="direccion"></p>
+                <p class="txtForm"><textarea class="commentForm" type="text" name="comentarios" placeholder="Comentarios adicionales" id="comentario"></textarea></p>
+                <p>
+                    <input class="btnForm" type="submit" value="Enviar" onclick="enviarPedido()">&nbsp; &nbsp; &nbsp;
+                    <input class="btnForm" type="reset" value="Cancelar" onclick="cancelarPedido()">
+                </p>
+            </form>
+        </div>
+
+        <footer class="footerCarrito">
+            <div class="total">
+                <div class="text">
+                    <p>Subtotal</p>
+                    <p>Tax % Fees</p>
+                    <p>Delivery</p>
+                    <p>TOTAL</p>
+                </div>
+
+                <div class="subtotal">
+                    <p class="subtotalPrecio">0</p>
+                    <p class="impuestos">0</p>
+                    <p class="delivery">2.00 €</p>
+                    <p class="totalPrecio">0</p>
+                </div>
+
+                <button class="envio" onclick="continuarPedido()">Pagar</button>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./js/cat.js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/filtrado.js"></script>
+    <script src="./js/desglosePrecio.js"></script>
+    <script src="./js/contador.js"></script>
+    <script src="./js/cambiarPantalla.js"></script>
+    <script src="./js/pintarCarrito.js"></script>
+    <script src="./js/formMail.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+$color1: #E28080;
+$color4: #f4f4f4;
+@mixin icoFooter {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@mixin icoImg {
+    width: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 8vh;
+    align-items: center;
+    background-color: $color4;
+    position: fixed;
+    bottom: -1px;
+    box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    outline: none;
+}
+
+.icoIG {
+    @include icoFooter();
+}
+
+.icoIG img {
+    @include icoImg();
+}
+
+.icoHome {
+    @include icoFooter();
+}
+
+.icoHome img {
+    @include icoImg();
+}
+
+.homeSeleccionado {
+    filter: invert(1) sepia(0) saturate(10) hue-rotate(5deg) drop-shadow(0px 0px 5px #C61C1C);
+}
+
+.icoSend {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color1;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    position: relative;
+    top: -35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icoSend img {
+    @include icoImg();
+    filter: invert(1) sepia(0) saturate(10) hue-rotate(5deg);
+}
+
+.icoChat {
+    @include icoFooter();
+}
+
+.icoChat img {
+    @include icoImg();
+}
+
+.icoOptional {
+    @include icoFooter();
+}
+
+.icoOptional {
+    @include icoImg();
+}

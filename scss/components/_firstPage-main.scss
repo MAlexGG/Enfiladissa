@@ -1,0 +1,112 @@
+$color1: #E28080;
+$color2: #f0f0f2;
+$color4: #f4f4f4;
+@mixin counterButton {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@mixin visor {
+    width: 30px;
+    height: 30px;
+    background-color: $color4;
+    color: black;
+    margin: 0px;
+    text-align: center;
+    line-height: 28px;
+}
+
+@mixin infoProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 2vh;
+    margin-left: 5%;
+}
+
+@mixin infoDetalle {
+    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price {
+    color: $color1;
+    font-weight: 600;
+}
+
+p {
+    color: $color1;
+}
+
+.productos {
+    width: auto;
+    padding-bottom: 65px;
+    padding-top: 10px;
+}
+
+.productos::-webkit-scrollbar {
+    display: none;
+}
+
+.infoProductos {
+    @include infoProductos();
+}
+
+.mainImg {
+    width: 164px;
+    height: 164px;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.infoDetalle {
+    @include infoDetalle();
+}
+
+.infoDetalle p {
+    margin: 0px;
+}
+
+h4 {
+    padding-bottom: 10px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 15px;
+}
+
+.counter button {
+    @include counterButton();
+}
+
+.counterLeft {
+    border-radius: 2px 0px 0px 2px;
+}
+
+.counterRight {
+    border-radius: 0px 2px 2px 0px;
+}
+
+.visor {
+    @include visor()
+}
+
+.readMore {
+    width: 30px;
+    height: auto;
+    margin-left: 15px;
+    cursor: pointer;
+}

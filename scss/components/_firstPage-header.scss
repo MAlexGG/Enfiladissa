@@ -1,0 +1,39 @@
+.firstPageHeader {
+    display: flex;
+    padding: 10px 0px 10px 0px;
+}
+
+.contenedorLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50vw;
+    height: auto;
+}
+
+.menuImg {
+    width: 10vw;
+    height: auto;
+}
+
+.menu {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.subButton {
+    display: none;
+}
+
+h1 {
+    width: 100%;
+}
+
+.slogan {
+    width: 100%;
+}

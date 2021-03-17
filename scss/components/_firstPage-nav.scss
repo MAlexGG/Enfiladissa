@@ -1,0 +1,61 @@
+$color1: #E28080;
+$color4: #f4f4f4;
+nav {
+    padding-right: 5%;
+}
+
+.categorias {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: sticky;
+    top: 0%;
+    background-color: $color4;
+}
+
+.categorias::-webkit-scrollbar {
+    display: none;
+}
+
+.contenedorCategorias {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 9px 19px rgba(0, 0, 0, 0.1);
+    margin: 10px 5px 10px 5px;
+    display: inline-grid;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.contenedorCategoriasClick {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 5px 15px $color1;
+    margin: 5px;
+    display: inline-grid;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contenedorCategoriasImg {
+    width: 120%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+}
+
+.contenedorCategoriasImgClick {
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.textoCategorias {
+    visibility: hidden;
+}

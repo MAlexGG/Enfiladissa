@@ -1,0 +1,9 @@
+.productos2 {
+    width: auto;
+    height: 60vh;
+    overflow: scroll;
+}
+
+.productos2::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,55 @@
+$color2:#f0f0f2;
+$color4: #f4f4f4;
+@mixin icoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+}
+
+.secondPageHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    height: 13vw;
+    background-color: $color4;
+}
+
+.back {
+    @include icoHeader();
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.returnArrow {
+    width: 80%;
+    height: auto;
+}
+
+.del {
+    @include icoHeader();
+    cursor: pointer;
+}
+
+.cart {
+    @include icoHeader();
+    filter: invert(1) sepia(1) saturate(20) hue-rotate(290deg);
+    img {
+        width: 40px;
+    }
+}
+
+.garbage {
+    width: 70%;
+    height: auto;
+}
+
+h3 {
+    padding: 5%;
+}

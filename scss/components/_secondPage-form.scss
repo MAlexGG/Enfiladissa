@@ -1,0 +1,53 @@
+$color1: #E28080;
+.cajaFormulario {
+    @include form();
+}
+
+#formID {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: auto;
+}
+
+.txtForm {
+    padding-bottom: 12%;
+}
+
+input[type=text] {
+    border: none;
+    background-color: white;
+    border-radius: 6px;
+    width: 16rem;
+    height: 1.5rem;
+    padding-left: 5%;
+}
+
+input[type=text]::placeholder {
+    text-align: top;
+    color: $color1;
+}
+
+.commentForm {
+    height: 6rem;
+    width: 16rem;
+    border: none;
+    border-radius: 6px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+textarea::placeholder {
+    color: $color1;
+}
+
+.btnForm {
+    background-color: $color1;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    width: 6rem;
+    height: 2.2rem;
+    filter: drop-shadow(2px 2px 6px white);
+}
