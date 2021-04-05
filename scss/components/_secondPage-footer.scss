@@ -1,7 +1,7 @@
 $color1: #E28080;
 $color3: #FBE2A1;
 $color4: #f4f4f4;
-.total {
+.footerCarrito {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -9,6 +9,15 @@ $color4: #f4f4f4;
     background-color: $color4;
     justify-content: flex-end;
     align-content: center;
+    position: fixed;
+    bottom: 0px;
+    box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.2);
+    @media screen and (min-width: 1200px) {
+        height: 31vh;
+        width: 26vw;
+        right: 30px;
+        top: 25vh;
+    }
 }
 
 .text {
@@ -17,6 +26,11 @@ $color4: #f4f4f4;
     align-items: flex-end;
     width: 50vw;
     margin: 5vw 0vw 4vw 0vw;
+    @media screen and (min-width: 1200px) {
+        width: 10vw;
+        margin: 0vw 0vw 0vw 0vw;
+        align-items: none;
+    }
 }
 
 .text p {
@@ -30,6 +44,11 @@ $color4: #f4f4f4;
     align-items: flex-end;
     width: 35vw;
     margin: 5vw 15vw 4vw 0vw;
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+        width: 10vw;
+        margin: 0vw 0vw 0vw 3vw;
+    }
 }
 
 .subtotal p {
@@ -52,9 +71,8 @@ $color4: #f4f4f4;
     margin-right: 15vw;
     font-size: 18px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-}
-
-.footerCarrito {
-    position: fixed;
-    height: 25vh;
+    @media screen and (min-width: 1200px) {
+        margin-right: 5vw;
+        margin-top: 2vw;
+    }
 }

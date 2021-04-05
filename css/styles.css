@@ -13,6 +13,9 @@
 .logo {
   width: 50vw;
   height: auto; }
+  @media screen and (min-width: 576px) {
+    .logo {
+      width: 35vw; } }
 
 .menuImg {
   width: 10vw;
@@ -163,7 +166,7 @@ h4 {
   margin-left: 15px;
   cursor: pointer; }
 
-footer {
+.footerFirst {
   display: flex;
   justify-content: space-around;
   width: 100vw;
@@ -246,88 +249,81 @@ button {
   align-items: center; }
 
 @media screen and (min-width: 768px) {
-  main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column; }
-  header {
-    justify-content: center; }
-  .menu {
+  /*Header - Footer*/
+  .footerFirst {
+    justify-content: flex-end;
+    top: 10px;
+    background-color: transparent;
+    box-shadow: none; }
+  button {
+    margin-right: 2%; }
+  .icoSend {
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    box-shadow: none; }
+  .icoOptional {
     display: none; }
+  .icoSend img {
+    width: 25px; }
+  .icoHome img {
+    width: 25px; }
+  .icoIG img {
+    width: 25px; }
+  .icoChat img {
+    width: 25px; }
   .contenedorLogo {
-    display: flex;
-    justify-content: center; }
+    justify-content: flex-start;
+    position: fixed;
+    background-color: #FAFAFA;
+    height: 10vh;
+    top: 0%; }
   .logo {
-    width: 16vw; }
-  h1 {
-    padding: 1%;
-    text-align: center; }
-  h3 {
-    text-align: center; }
-  .slogan {
-    padding: 1%;
-    text-align: center; }
-  .categorias {
-    margin: auto; }
-  .contenedorCategorias {
-    width: 175px;
-    height: 135px; }
-  .contenedorCategorias img {
-    width: 80%;
-    padding-top: 1%; }
-  .contenedorCategorias p {
-    font-size: 117%; }
-  .infoDetalle {
-    width: 50vw; }
-  .infoDetalle p {
-    font-size: 1.5em; }
-  .infoDetalle h4 {
-    font-size: 1.5em; }
-  .platos {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 3%; }
-  .infoPlatos {
-    justify-content: center;
-    width: 90vw;
-    margin-left: 0%; }
-  .infoPlatos img {
-    width: 310px;
-    height: 150px; }
-  .counter button {
-    width: 40px;
-    height: 40px;
-    font-size: 1.5em; }
-  .visor {
-    width: 40px;
-    height: 40px;
-    line-height: 40px; }
-  .image {
-    width: 250px; }
-  .text {
-    font-size: 25px; }
-  .subtotal {
-    font-size: 25px; } }
+    width: 20vw; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    .logo {
+      width: 12vw; } }
 
 @media screen and (min-width: 768px) {
-  /*Formulario*/
-  .txtForm {
-    padding-bottom: 6%; }
-  input[type=text] {
-    width: 29rem;
-    height: 2.5rem;
-    font-size: 1.2rem; }
-  .commentForm {
-    height: 11rem;
-    width: 29rem; }
-  .btnForm {
-    width: 10rem;
-    height: 3.2rem; }
-  textarea::placeholder {
-    font-size: 1.2rem; }
-  .btnForm {
-    font-size: 1.2rem; } }
+  /*NavBar*/
+  .contenedorCategorias {
+    width: 140px;
+    height: 140px; }
+  .categorias {
+    top: 10%; }
+  /*Main*/
+  .productos {
+    margin-top: 12%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    .productos {
+      margin-top: 7%; } }
+
+@media screen and (min-width: 768px) {
+  .infoProductos {
+    margin-left: 3%;
+    width: 45%; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    .infoProductos {
+      width: 30%; } }
+
+@media screen and (min-width: 768px) {
+  /*Second Page*/
+  /*Main*/
+  .productos2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start; }
+  .infoProductos {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
+    .infoProductos {
+      width: 45%; } }
 
 .secondPageHeader {
   display: flex;
@@ -338,6 +334,9 @@ button {
   margin-top: 5%;
   height: 13vw;
   background-color: #f4f4f4; }
+  @media screen and (min-width: 1200px) {
+    .secondPageHeader {
+      height: 5vw; } }
 
 .back {
   display: flex;
@@ -349,6 +348,10 @@ button {
   background-color: transparent;
   border-radius: 2px;
   cursor: pointer; }
+  @media screen and (min-width: 992px) {
+    .back {
+      width: 30px;
+      height: 30px; } }
 
 .returnArrow {
   width: 80%;
@@ -363,6 +366,10 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer; }
+  @media screen and (min-width: 992px) {
+    .del {
+      width: 30px;
+      height: 30px; } }
 
 .cart {
   display: flex;
@@ -373,6 +380,10 @@ button {
   border: none;
   background-color: transparent;
   filter: invert(1) sepia(1) saturate(20) hue-rotate(290deg); }
+  @media screen and (min-width: 992px) {
+    .cart {
+      width: 30px;
+      height: 30px; } }
   .cart img {
     width: 40px; }
 
@@ -382,23 +393,41 @@ button {
 
 h3 {
   padding: 5%; }
+  @media screen and (min-width: 1200px) {
+    h3 {
+      padding: 2%; } }
 
 .productos2 {
-  width: auto;
   height: 60vh;
   overflow: scroll; }
+  @media screen and (min-width: 576px) {
+    .productos2 {
+      height: 55vh; } }
+  @media screen and (min-width: 1200px) {
+    .productos2 {
+      height: 70vh;
+      width: 70vw; } }
 
 .productos2::-webkit-scrollbar {
   display: none; }
 
-.total {
+.footerCarrito {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: 25vh;
   background-color: #f4f4f4;
   justify-content: flex-end;
-  align-content: center; }
+  align-content: center;
+  position: fixed;
+  bottom: 0px;
+  box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.2); }
+  @media screen and (min-width: 1200px) {
+    .footerCarrito {
+      height: 31vh;
+      width: 26vw;
+      right: 30px;
+      top: 25vh; } }
 
 .text {
   display: flex;
@@ -406,6 +435,11 @@ h3 {
   align-items: flex-end;
   width: 50vw;
   margin: 5vw 0vw 4vw 0vw; }
+  @media screen and (min-width: 1200px) {
+    .text {
+      width: 10vw;
+      margin: 0vw 0vw 0vw 0vw;
+      align-items: none; } }
 
 .text p {
   height: auto;
@@ -417,6 +451,11 @@ h3 {
   align-items: flex-end;
   width: 35vw;
   margin: 5vw 15vw 4vw 0vw; }
+  @media screen and (min-width: 1200px) {
+    .subtotal {
+      align-items: flex-start;
+      width: 10vw;
+      margin: 0vw 0vw 0vw 3vw; } }
 
 .subtotal p {
   height: auto;
@@ -436,10 +475,10 @@ h3 {
   margin-right: 15vw;
   font-size: 18px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25); }
-
-.footerCarrito {
-  position: fixed;
-  height: 25vh; }
+  @media screen and (min-width: 1200px) {
+    .envio {
+      margin-right: 5vw;
+      margin-top: 2vw; } }
 
 .cajaFormulario {
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
@@ -473,6 +512,14 @@ input[type=text] {
   width: 14rem;
   height: 1.5rem;
   padding-left: 5%; }
+  @media screen and (min-width: 576px) {
+    input[type=text] {
+      width: 20rem;
+      height: 2rem; } }
+  @media screen and (min-width: 768px) {
+    input[type=text] {
+      width: 30rem;
+      height: 2.5rem; } }
 
 input[type=text]::placeholder {
   text-align: top;
@@ -484,6 +531,14 @@ input[type=text]::placeholder {
   border: none;
   border-radius: 6px;
   padding-left: 5%; }
+  @media screen and (min-width: 576px) {
+    .commentForm {
+      width: 20rem;
+      height: 10rem; } }
+  @media screen and (min-width: 768px) {
+    .commentForm {
+      width: 30rem;
+      height: 13rem; } }
 
 textarea::placeholder {
   color: #E28080; }
@@ -496,6 +551,10 @@ textarea::placeholder {
   width: 6rem;
   height: 2.2rem;
   filter: drop-shadow(2px 2px 6px white); }
+  @media screen and (min-width: 576px) {
+    .btnForm {
+      width: 7rem;
+      height: 2.5rem; } }
 
 * {
   font-family: "Montserrat", sans-serif;

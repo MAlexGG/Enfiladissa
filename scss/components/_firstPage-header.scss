@@ -13,6 +13,9 @@
 .logo {
     width: 50vw;
     height: auto;
+    @media screen and (min-width: 576px) {
+        width: 35vw;
+    }
 }
 
 .menuImg {

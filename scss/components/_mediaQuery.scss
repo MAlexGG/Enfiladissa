@@ -1,114 +1,91 @@
-    @media screen and (min-width: 768px) {
-        main {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-        header {
-            justify-content: center;
-        }
-        .menu {
-            display: none;
-        }
-        .contenedorLogo {
-            display: flex;
-            justify-content: center;
-        }
-        .logo {
-            width: 16vw;
-        }
-        h1 {
-            padding: 1%;
-            text-align: center;
-        }
-        h3 {
-            text-align: center;
-        }
-        .slogan {
-            padding: 1%;
-            text-align: center;
-        }
-        .categorias {
-            margin: auto;
-        }
-        .contenedorCategorias {
-            width: 175px;
-            height: 135px;
-        }
-        .contenedorCategorias img {
-            width: 80%;
-            padding-top: 1%;
-        }
-        .contenedorCategorias p {
-            font-size: 117%;
-        }
-        .infoDetalle {
-            width: 50vw;
-        }
-        .infoDetalle p {
-            font-size: 1.5em;
-        }
-        .infoDetalle h4 {
-            font-size: 1.5em;
-        }
-        .platos {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            margin-top: 3%;
-        }
-        .infoPlatos {
-            justify-content: center;
-            width: 90vw;
-            margin-left: 0%;
-        }
-        .infoPlatos img {
-            width: 310px;
-            height: 150px;
-        }
-        .counter button {
-            width: 40px;
-            height: 40px;
-            font-size: 1.5em;
-        }
-        .visor {
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-        }
-        .image {
-            width: 250px;
-        }
-        .text {
-            font-size: 25px;
-        }
-        .subtotal {
-            font-size: 25px;
+@mixin imageIco {
+    width: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    /*Header - Footer*/
+    .footerFirst {
+        justify-content: flex-end;
+        top: 10px;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    button {
+        margin-right: 2%;
+    }
+    .icoSend {
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        box-shadow: none;
+    }
+    .icoOptional {
+        display: none;
+    }
+    .icoSend img {
+        @include imageIco();
+    }
+    .icoHome img {
+        @include imageIco();
+    }
+    .icoIG img {
+        @include imageIco();
+    }
+    .icoChat img {
+        @include imageIco();
+    }
+    .contenedorLogo {
+        justify-content: flex-start;
+        position: fixed;
+        background-color: #FAFAFA;
+        height: 10vh;
+        top: 0%;
+    }
+    .logo {
+        width: 20vw;
+        @media screen and (min-width: 992px) {
+            width: 12vw;
         }
     }
-    
-    @media screen and (min-width: 768px) {
-        /*Formulario*/
-        .txtForm {
-            padding-bottom: 6%;
-        }
-        input[type=text] {
-            width: 29rem;
-            height: 2.5rem;
-            font-size: 1.2rem;
-        }
-        .commentForm {
-            height: 11rem;
-            width: 29rem;
-        }
-        .btnForm {
-            width: 10rem;
-            height: 3.2rem;
-        }
-        textarea::placeholder {
-            font-size: 1.2rem;
-        }
-        .btnForm {
-            font-size: 1.2rem;
+    /*NavBar*/
+    .contenedorCategorias {
+        width: 140px;
+        height: 140px;
+    }
+    .categorias {
+        top: 10%
+    }
+    /*Main*/
+    .productos {
+        margin-top: 12%;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        @media screen and (min-width: 992px) {
+            margin-top: 7%;
         }
     }
+    .infoProductos {
+        margin-left: 3%;
+        width: 45%;
+        @media screen and (min-width: 992px) {
+            width: 30%;
+        }
+    }
+    /*Second Page*/
+    /*Main*/
+    .productos2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .infoProductos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (min-width: 1200px) {
+            width: 45%;
+        }
+    }
+}

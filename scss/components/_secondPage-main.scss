@@ -1,7 +1,13 @@
 .productos2 {
-    width: auto;
     height: 60vh;
     overflow: scroll;
+    @media screen and (min-width: 576px) {
+        height: 55vh;
+    }
+    @media screen and (min-width: 1200px) {
+        height: 70vh;
+        width: 70vw;
+    }
 }
 
 .productos2::-webkit-scrollbar {

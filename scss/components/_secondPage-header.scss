@@ -8,6 +8,10 @@ $color4: #f4f4f4;
     height: 40px;
     border: none;
     background-color: transparent;
+    @media screen and (min-width: 992px) {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .secondPageHeader {
@@ -19,6 +23,9 @@ $color4: #f4f4f4;
     margin-top: 5%;
     height: 13vw;
     background-color: $color4;
+    @media screen and (min-width: 1200px) {
+        height: 5vw;
+    }
 }
 
 .back {
@@ -52,4 +59,7 @@ $color4: #f4f4f4;
 
 h3 {
     padding: 5%;
+    @media screen and (min-width: 1200px) {
+        padding: 2%;
+    }
 }

@@ -19,7 +19,7 @@
             <div class="productos"></div>
         </main>
 
-        <footer>
+        <footer class="footerFirst">
             <button class="icoHome" onclick="reinicio()"><img class="homeSeleccionado" onclick="reinicio()"src="./img/home.svg"></button>
             <button class="icoIG"><a href="https://www.instagram.com/enfiladissa.macrame/?hl=es" target="_blank"><img src="./img/IG.svg"></a></button>
             <button class="icoSend" onclick="enviarCarrito()"><img src="./img/cart.svg"></button>
@@ -69,23 +69,21 @@
         </div>
 
         <footer class="footerCarrito">
-            <div class="total">
-                <div class="text">
-                    <p>Subtotal</p>
-                    <p>Tax % Fees</p>
-                    <p>Delivery</p>
-                    <p>TOTAL</p>
-                </div>
-
-                <div class="subtotal">
-                    <p class="subtotalPrecio">0</p>
-                    <p class="impuestos">0</p>
-                    <p class="delivery">2.00 €</p>
-                    <p class="totalPrecio">0</p>
-                </div>
-
-                <button class="envio" onclick="continuarPedido()">Pagar</button>
+            <div class="text">
+                <p>Subtotal</p>
+                <p>Tax % Fees</p>
+                <p>Delivery</p>
+                <p>TOTAL</p>
             </div>
+
+            <div class="subtotal">
+                <p class="subtotalPrecio">0</p>
+                <p class="impuestos">0</p>
+                <p class="delivery">2.00 €</p>
+                <p class="totalPrecio">0</p>
+            </div>
+
+            <button class="envio" onclick="continuarPedido()">Pagar</button>
         </footer>
 
     </div>
