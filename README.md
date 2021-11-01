@@ -21,4 +21,4 @@ This is a product catalogue with payment gateway (stripe consume with API) and c
 HTML5, CSS3, Javascript, Figma, Adobe Photoshop, Adobe Illustrator.
 
 ## Next Steps
-API's are not quite functional yet, and information needs to be updated.
+API's are not quite functional yet, and information needs to be updated, desktop styles it's not finished.
