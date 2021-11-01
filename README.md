@@ -9,7 +9,7 @@ Enfiladissa Macramé
 ***
 ## General Info
 
-This is a product catalogue with payment gateway (stripe consume with API) and chat (whatsapp consume with API) made with HTML5, CSS3 and javascript vanilla. I made de UX/UI design in Figma both desktop and mobile. It's responsive.
+This is a product catalogue with payment gateway (stripe consume with API) and chat (whatsapp consume with API) made with HTML5, CSS3 and javascript vanilla. I made the UX/UI design in Figma both desktop and mobile. It's responsive.
 
 ### UI Design
 ![X - HOME](https://user-images.githubusercontent.com/73828751/139686605-a60811dc-deed-4832-9840-84e47031b030.jpg)
